@@ -3,28 +3,106 @@
     <div class="container">
       <div class="level">
         <div class="level-left">
-          <div class="level-item is-column">
-            <div class="level-subitem footer-address">
-              <div class="footer-address__name">
-                <!-- {{ $t('donationsAddress') }} -->
-              </div>
-              <!-- <a
-                class="footer-address__value"
-                target="_blank"
-                :href="addressExplorerUrl(donationsAddress)"
-                rel="noopener noreferrer"
-                >{{ donationsAddress }}</a
-              > -->
-            </div>
-          </div>
+          <div class="level-item is-column"></div>
         </div>
         <div class="level-right">
           <div class="level-item is-column">
             <div class="level-subitem">
               <div class="buttons">
-                <a href="https://twitter.com/whiteethtoken/" class="footer-links-xee">Twitter</a>
-                <!-- <a href="#" class="footer-links-xee">Github</a> -->
-                <a href="https://t.me/White_ETH" class="footer-links-xee">Telegram</a>
+                <!-- <b-button
+                  tag="a"
+                  type="is-icon"
+                  :href="duneLink"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  icon-right="stats"
+                ></b-button>
+                <b-button
+                  tag="a"
+                  type="is-icon"
+                  href="https://torn.community"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  icon-right="discourse"
+                ></b-button>
+                <b-button
+                  tag="a"
+                  type="is-icon"
+                  href="https://discord.com/invite/TFDrM8K42j"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  icon-right="discord"
+                ></b-button>
+                <b-button
+                  tag="a"
+                  type="is-icon"
+                  href="https://tornado-cash.medium.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  icon-right="medium"
+                ></b-button>
+                <b-button
+                  tag="a"
+                  type="is-icon"
+                  href="https://twitter.com/TornadoCash"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  icon-right="twitter"
+                ></b-button>
+                <b-button
+                  tag="a"
+                  type="is-icon"
+                  href="https://t.me/TornadoCashOfficial"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  icon-right="telegram"
+                ></b-button> -->
+                <b-button
+                  tag="a"
+                  type="is-icon"
+                  href="https://twitter.com/Tornadocash2"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  icon-right="twitter"
+                ></b-button>
+                <b-button
+                  tag="a"
+                  type="is-icon"
+                  href="https://t.me/tornadocash_v2"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  icon-right="telegram"
+                ></b-button>
+                <b-button
+                  tag="a"
+                  type="is-icon"
+                  href="https://github.com/tornadocash2"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  icon-right="github"
+                ></b-button>
+                <div class="break"></div>
+                <b-dropdown
+                  v-model="$i18n.locale"
+                  class="dropdown-langs"
+                  position="is-top-left"
+                  aria-role="list"
+                  @change="langChange"
+                >
+                  <b-button slot="trigger" type="is-icon">
+                    <FlagIcon :code="$i18n.locale" :class="'is-active-locale-' + $i18n.locale" />
+                  </b-button>
+
+                  <b-dropdown-item
+                    v-for="locale in locales"
+                    :key="locale"
+                    :value="locale"
+                    aria-role="listitem"
+                  >
+                    <FlagIcon :code="locale" />
+                    {{ printLang(locale) }}
+                  </b-dropdown-item>
+                </b-dropdown>
               </div>
             </div>
           </div>
@@ -37,10 +115,13 @@
 <script>
 import { mapGetters } from 'vuex'
 
-// import { FlagIcon } from '@/components/icons'
+import { FlagIcon } from '@/components/icons'
 import { LOCALES_NAMES, DONATIONS_ADDRESS } from '@/constants'
 
 export default {
+  components: {
+    FlagIcon
+  },
   data() {
     return {
       commit: process.env.commit,
@@ -54,7 +135,7 @@ export default {
       const mainnetNetworks = [1, 5]
 
       if (mainnetNetworks.includes(Number(this.netId))) {
-        return 'https://dune.xyz/poma/white-cash_1'
+        return 'https://dune.xyz/poma/tornado-cash_1'
       }
 
       return 'https://dune.xyz/fennec/Tornado-Cash-Cross-chain-Dashboard'

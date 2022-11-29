@@ -213,6 +213,9 @@ export default {
           width: 440
         })
         approveModal.$on('close', onApproval)
+        if (this.isSufficientAllowance) {
+          this.openDepositModal()
+        }
       }
       this.isDepositBtnClicked = false
     }

@@ -13,7 +13,7 @@ body {
 .wrapper {
     display: flex;
     flex-direction: column;
-    min-height: 100vh;
+    min-height: 98vh;
     @media print {
         background: none;
     }
@@ -237,7 +237,7 @@ body {
 .b-tooltip.is-dark-tooltip .tooltip-content {}
 
 .footer-links-xee {
-    color: #000 !important;
+    color: #fff !important;
     font-weight: bold;
     margin-right: 10px;
 }

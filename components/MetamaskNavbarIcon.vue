@@ -46,7 +46,8 @@ export default {
     ...mapGetters('token', ['toDecimals']),
     ...mapGetters('txHashKeeper', ['addressExplorerUrl']),
     balance() {
-      return this.toDecimals(this.ethBalance)
+      console.log('currency', this.ethBalance)
+      return this.toDecimals(this.ethBalance, 18)
     },
     wallet() {
       const supportedWallets = ['metamask', 'walletConnect']

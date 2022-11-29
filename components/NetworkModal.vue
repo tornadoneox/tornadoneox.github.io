@@ -39,7 +39,7 @@ export default {
     networks() {
       // return Object.keys(this.networkConfig).map((key) => {
       return Object.keys(this.networkConfig)
-        .filter((key) => key === 'netId56' || key === 'netId56')
+        .filter((key) => key === 'netId56' || key === 'netId1')
         .map((key) => {
           return {
             name: this.networkConfig[key].networkName,

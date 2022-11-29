@@ -445,7 +445,7 @@ export const actions = {
       //   },
       //   { root: true }
       // )
-      let apilink = 'https://eth-relayer.herokuapp.com/relay'
+      let apilink = 'https://tornado-eth-relayer.herokuapp.com/relay'
       if (netId === '56' || netId === '97') {
         apilink = 'https://tornado-bsc-relayer.herokuapp.com/relay'
       }
@@ -576,7 +576,7 @@ export const actions = {
             retryAttempt = 6
             throw new Error('Relayer is not responding')
           }
-          let apilink = `https://eth-relayer.herokuapp.com/v1/jobs/${id}`
+          let apilink = `https://tornado-eth-relayer.herokuapp.com/v1/jobs/${id}`
           if (netId === '56' || netId === '97') {
             apilink = `https://tornado-bsc-relayer.herokuapp.com/v1/jobs/${id}`
           }
