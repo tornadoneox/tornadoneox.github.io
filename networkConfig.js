@@ -26,7 +26,7 @@ export default {
     merkleTreeHeight: 20,
     emptyElement: '21663839004416932945382355908790599225266501822907911457504978515578255421292',
     networkName: 'Ethereum Mainnet',
-    deployedBlock: 15458023,
+    deployedBlock: 16066262,
     rpcUrls: {
       Infura: {
         name: 'Infura',
@@ -48,19 +48,42 @@ export default {
     tokens: {
       eth: {
         instanceAddress: {
-          '0.1': '0x2FD6F383290f3640100119cBe175f0691f86a4E4',
-          '0.5': '0xf9550eE7ACdD3E5a6B932a920A345A56069075dD',
-          '1': '0xBFd02a8B75CC2CC4F6DE06b0C2340Bd6F8862A49',
-          '2': '0x92eB03d795Fd917E289f2e53301f7Df5E2526de1',
-          '5': '0x5E6f20DE931848523B2a91F0330107A92e7E0A22'
+          '0.1': '0x654Ea9db6792569BD276FE862748B9D67afaA002',
+          '1': '0x7c133d39220877a781fe2905cd7666e6b6e162aa',
+          '10': '0xd545A432855ab48f722f47D2833569fb5f48Bf5F',
+          '100': '0x753050049Ba2E2869Ad652C3e6d2ba68854C9086'
         },
         symbol: 'ETH',
         decimals: 18
+      },
+      dai: {
+        instanceAddress: {
+          '100': '0xe871436b8e0e69934e8f7237a07d7b06d7ca5ff7',
+          '1000': '0xf0f16d32f3af84ae46245e490bedf1b0edf785ec',
+          '10000': '0x7083377d0cf8852358dd6a559281c7c09366887d',
+          '100000': '0x6bf81db7469a0bacb4a14f2cf0a70c7af8be2ff8'
+        },
+        tokenAddress: '0x6b175474e89094c44da98b954eedeac495271d0f',
+        symbol: 'DAI',
+        decimals: 18,
+        gasLimit: '80000'
+      },
+      hex: {
+        instanceAddress: {
+          '100': '0x1fcde12aab9bde309019adf18b36c9aa66bd9e81',
+          '1000': '0x4e2bd6c44813ec175c6666a2a615a8f05854ce91',
+          '10000': '0x11a99a832d6615209fcb79125e5ef629a92f6c05',
+          '100000': '0x4e09ee0f4230bb259f361ddf031ed075a32b34d6'
+        },
+        tokenAddress: '0x2b591e99afe9f32eaa6214f7b7629768c40eeb39',
+        symbol: 'HEX',
+        decimals: 8,
+        gasLimit: '80000'
       }
     },
     ensSubdomainKey: 'mainnet-white',
     pollInterval: 15,
-    'white-proxy-light.contract.tornadocash.eth': '0x9a19E06322d1FE9bEDBd3F6555803De2713C1762'
+    'white-proxy-light.contract.tornadocash.eth': '0x73c36830296Cf339027285AedD3251b4D276f44D'
   },
   // netId1: {
   //   rpcCallRetryAttempt: 15,
@@ -252,7 +275,7 @@ export default {
     deployedBlock: 22941231,
     multicall: '0x41263cba59eb80dc200f3e2544eda4ed6a90e76c',
     echoContractAccount: '0xa75BF2815618872f155b7C4B0C81bF990f5245E4',
-    verifier: '0x81fefBd94cb80d4841f0735b5CC8a1536489fB27',
+    verifier: '0x2Fc34DFb4e0070f54C30Cd65a677c04118e1a3a0',
     rpcUrls: {
       publicRpc1: {
         name: 'BSC Public RPC 1',
