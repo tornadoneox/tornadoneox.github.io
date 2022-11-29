@@ -1,6 +1,6 @@
-# Tornado Cash Classic UI
+# Tornado Cash Classic UI - live version https://tornadocash2.com
 
-> UI for non-custodial Ethereum Privacy solution
+> UI for non-custodial Ethereum and Binance Smart Chain Privacy solution
 
 ## Building locally
 
