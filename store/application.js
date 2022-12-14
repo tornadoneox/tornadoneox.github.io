@@ -706,7 +706,7 @@ const actions = {
     if (netId === '56' || netId === '97') {
       relayer = BigInt('0x22DfC892c58959f8693f97c0647920f7c28e71b3')
     } else {
-      relayer = BigInt('0x22DfC892c58959f8693f97c0647920f7c28e71b3')
+      relayer = BigInt('0xb69FD99ca93670cDDa6B5B103d1CbaC025da90E0')
     }
     // const fee = BigInt('1000000000000000')
     const refund = BigInt(0)

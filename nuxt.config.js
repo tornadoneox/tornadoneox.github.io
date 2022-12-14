@@ -86,11 +86,6 @@ export default {
                 content: 'website'
             },
             {
-                hid: 'og:image',
-                property: 'og:image',
-                content: 'https://whitewasheth.com//tw.png'
-            },
-            {
                 hid: 'description',
                 name: 'description',
                 content: 'Non-custodial, trustless, serverless, private transactions on Ethereum network'

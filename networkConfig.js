@@ -1,6 +1,5 @@
 const {
   INFURA_KEY,
-  ALCHEMY_MAINNET_KEY,
   ALCHEMY_POLYGON_KEY,
   ALCHEMY_OPTIMISM_KEY,
   ALCHEMY_ARBITRUM_KEY,
@@ -28,13 +27,13 @@ export default {
     networkName: 'Ethereum Mainnet',
     deployedBlock: 16066262,
     rpcUrls: {
+      RPC: {
+        name: '1RPC',
+        url: `https://1rpc.io/eth`
+      },
       Infura: {
         name: 'Infura',
         url: `https://mainnet.infura.io/v3/c2d1cdebd15645c590776f9e09d87c46`
-      },
-      Alchemy: {
-        name: 'Alchemy',
-        url: `https://eth-mainnet.alchemyapi.io/v2/${ALCHEMY_MAINNET_KEY}`
       },
       Nodereal: {
         name: 'Nodereal',

@@ -126,7 +126,6 @@ export default {
 
       if (this.withdrawType === 'relayer') {
         const relayerFee = this.totalRelayerFee
-        console.log('debug->total', Number(total), Number(relayerFee))
 
         if (currency === this.nativeCurrency) {
           total = total.sub(relayerFee)

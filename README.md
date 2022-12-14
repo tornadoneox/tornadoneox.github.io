@@ -27,7 +27,7 @@ For detailed explanation on how things work, checkout [Nuxt.js docs](https://nux
 
 ## Audit
 
-[TornadoCash_Classic_dApp_audit_Decurity.pdf](https://whitewasheth.com//audits/TornadoCash_Classic_dApp_audit_Decurity.pdf)
+[TornadoCash_Classic_dApp_audit_Decurity.pdf](https://twitter.com/Tornadocash2/status/1591471360353906690)
 
 ## Update cached files
 
