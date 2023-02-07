@@ -10,13 +10,21 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
+<<<<<<< HEAD
         .loading-tornado {
+=======
+        .loading-white {
+>>>>>>> 95c13a08109fe71f23578455200c086c1e2cbcca
             &:after {
                 content: '';
                 display: block;
                 height: 60px;
                 width: 60px;
+<<<<<<< HEAD
                 background-image: url('../img/logo.svg');
+=======
+                background-image: url('../img/white.webp');
+>>>>>>> 95c13a08109fe71f23578455200c086c1e2cbcca
                 animation: spinAroundReverse 2000ms infinite linear;
             }
         }

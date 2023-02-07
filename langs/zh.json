@@ -3,7 +3,10 @@
     "indexNotification": "Tornad Cash {link}。 但它仍处在实验阶段，请注意并自行承担使用风险。",
     "indexNotificationLinkText": "已通过安全审计",
     "binanceInternalTxsNotification": "请不要使用Binance钱包地址进行提款。Binance交易所目前不支持内部交易（包括Tornad Cash提款）。如果您有资金未收到的问题，您应该联系Binance支持。",
+<<<<<<< HEAD
     "tornadoV2": "Tornado Cash v2 从未得到任何政府机构的批准。 我们已使用新地址重新部署所有智能合约，因此不受 OFAC 制裁。 所有 RPC 都相应地工作。",
+=======
+>>>>>>> 95c13a08109fe71f23578455200c086c1e2cbcca
     "deposit": "存款",
     "depositButton": "存款",
     "withdraw": "提款",
@@ -440,7 +443,11 @@
     "relayerTotal": {
         "label": "当前中继器",
         "name": "名",
+<<<<<<< HEAD
         "fee": "龙卷风 费用"
+=======
+        "fee": "费用"
+>>>>>>> 95c13a08109fe71f23578455200c086c1e2cbcca
     },
     "withdrawalQueueIsOverloaded": "提款队列已超载"
 }

@@ -445,9 +445,15 @@ export const actions = {
       //   },
       //   { root: true }
       // )
+<<<<<<< HEAD
       let apilink = 'https://tornadov2-relayer-eth.herokuapp.com/relay'
       if (netId === '56' || netId === '97') {
         apilink = 'https://tornadov2-relayer-bsc.herokuapp.com/relay'
+=======
+      let apilink = 'https://tornado-eth-relayer.herokuapp.com/relay'
+      if (netId === '56' || netId === '97') {
+        apilink = 'https://tornado-bsc-relayer.herokuapp.com/relay'
+>>>>>>> 95c13a08109fe71f23578455200c086c1e2cbcca
       }
       const response = await fetch(apilink, {
         // const response = await fetch('http://localhost:8000/relay', {
@@ -491,7 +497,11 @@ export const actions = {
           netId,
           type: 'tornadov2',
           action: 'Deposit',
+<<<<<<< HEAD
           relayerUrl: 'tornadov2-relayer-bsc.herokuapp.com',
+=======
+          relayerUrl: 'tornado-bsc-relayer.herokuapp.com',
+>>>>>>> 95c13a08109fe71f23578455200c086c1e2cbcca
           commitmentHex,
           amount,
           currency,
@@ -576,9 +586,15 @@ export const actions = {
             retryAttempt = 6
             throw new Error('Relayer is not responding')
           }
+<<<<<<< HEAD
           let apilink = `https://tornadov2-relayer-eth.herokuapp.com/v1/jobs/${id}`
           if (netId === '56' || netId === '97') {
             apilink = `https://tornadov2-relayer-bsc.herokuapp.com/v1/jobs/${id}`
+=======
+          let apilink = `https://tornado-eth-relayer.herokuapp.com/v1/jobs/${id}`
+          if (netId === '56' || netId === '97') {
+            apilink = `https://tornado-bsc-relayer.herokuapp.com/v1/jobs/${id}`
+>>>>>>> 95c13a08109fe71f23578455200c086c1e2cbcca
           }
           const response = await fetch(apilink, {
             method: 'GET',

@@ -11,7 +11,11 @@
       <div class="withdraw-data-item">
         {{ $t('relayerTotal.fee') }}
         <!-- <span>{{ selectedRelayer.tornadoServiceFee }}%</span> -->
+<<<<<<< HEAD
         <span>1%</span>
+=======
+        <span>2%</span>
+>>>>>>> 95c13a08109fe71f23578455200c086c1e2cbcca
       </div>
     </div>
   </div>

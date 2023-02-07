@@ -3,7 +3,10 @@
     "indexNotification": "Tornado Cash {link}. Однако, это экспериментальный проект, используйте на свой страх и риск.",
     "indexNotificationLinkText": "прошел аудит",
     "binanceInternalTxsNotification": "Пожалуйста, не используйте адреса кошельков Binance для вывода средств. Внутренние транзакции (включая снятие средств с Tornado Cash) в настоящее время не поддерживаются на бирже Binance. Если у вас возникли проблемы с получением средств, вам следует обратиться в службу поддержки Binance.",
+<<<<<<< HEAD
     "tornadoV2": "Tornado Cash v2 никогда не подвергался санкциям со стороны какого-либо государственного органа. Мы повторно развернули все смарт-контракты с новыми адресами, поэтому они не подпадают под санкции OFAC. Все RPC работают соответственно.",
+=======
+>>>>>>> 95c13a08109fe71f23578455200c086c1e2cbcca
     "deposit": "Депозит",
     "depositButton": "Внести",
     "withdraw": "Вывод",
@@ -440,7 +443,11 @@
     "relayerTotal": {
         "label": "Current Relayer",
         "name": "Name",
+<<<<<<< HEAD
         "fee": "Tornado Fee"
+=======
+        "fee": "Fee"
+>>>>>>> 95c13a08109fe71f23578455200c086c1e2cbcca
     },
     "withdrawalQueueIsOverloaded": "Withdrawal queue is overloaded"
 }

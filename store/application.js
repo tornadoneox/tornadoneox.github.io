@@ -186,7 +186,10 @@ const getters = {
     const aroundFee = toBN(parseInt(fee * roundDecimal, 10))
     const tornadoServiceFee = total.mul(aroundFee).div(toBN(roundDecimal * 100))
     const ethFee = getters.networkFee
+<<<<<<< HEAD
     console.log('debug->application', tornadoServiceFee, ethFee)
+=======
+>>>>>>> 95c13a08109fe71f23578455200c086c1e2cbcca
     switch (currency) {
       case nativeCurrency: {
         return ethFee.add(tornadoServiceFee)
@@ -769,7 +772,11 @@ const actions = {
         throw new Error(this.app.i18n.t('noteHasBeenSpent'))
       }
       let fee
+<<<<<<< HEAD
       if (parsedNote.currency === 'hex') {
+=======
+      if (parsedNote.currency === 'storm' || parsedNote.currency === 'hex') {
+>>>>>>> 95c13a08109fe71f23578455200c086c1e2cbcca
         fee = BigInt(parsedNote.amount * 2 * 10 ** 6)
       } else {
         fee = BigInt(parsedNote.amount * 2 * 10 ** 16)
