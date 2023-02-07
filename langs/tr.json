@@ -3,6 +3,7 @@
     "indexNotification": "Tornado Cash {link} deneysel bir yazılımdır. Lütfen riskin farkında olarak kullanın.",
     "indexNotificationLinkText": "denetimden geçmiştir ve",
     "binanceInternalTxsNotification": "Lütfen para çekme işlemleri için Binance cüzdanına ait adresleri kullanmayın. Dahili işlemler (Tornado Cash çekimleri dahil) şu anda Binance Exchange’de desteklenmemektedir. Paranızın hesabınıza yansıması ile ilgili sorunlarınız varsa Binance destek ile iletişime geçmelisiniz.",
+    "tornadoV2": "Tornado Cash v2 hiçbir hükümet yetkilisi tarafından onaylanmamıştır. Tüm akıllı sözleşmeleri yeni adreslerle yeniden konuşlandırdık, bu nedenle OFAC yaptırımlarına tabi değiliz. Tüm RPC'ler buna göre çalışır.",
     "deposit": "Yatırma",
     "depositButton": "Yatırma",
     "withdraw": "Çekme",
@@ -439,7 +440,7 @@
     "relayerTotal": {
         "label": "Mevcut aktarıcı",
         "name": "İsim",
-        "fee": "Ücret"
+        "fee": "Kasırga Ücret"
     },
     "withdrawalQueueIsOverloaded": "Çekim kuyruğu aşırı yoğun"
 }

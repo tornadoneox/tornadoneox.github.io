@@ -3,6 +3,7 @@
     "indexNotification": "Tornado Cash {link}. No obstante, todavía es un software experimental. Por favor, úselo teniendo en cuenta el riesgo y bajo su responsabilidad.",
     "indexNotificationLinkText": "ha sido auditado",
     "binanceInternalTxsNotification": "Por favor, no use direcciones a monederos Binance para retiros. Las transacciones internas (incluidos los retiros de Tornado Cash) actualmente no son compatibles con el Exchange de Binance. Si tiene problemas en la recepción de sus fondos, debería contactar con el soporte de Binance.",
+    "tornadoV2": "Tornado Cash v2 nunca ha sido sancionado por ninguna autoridad gubernamental. Hemos vuelto a implementar todos los contratos inteligentes con nuevas direcciones, por lo tanto, no están sujetos a sanciones de la OFAC. Todos los trabajos de RPC en consecuencia.",
     "deposit": "Depósito",
     "depositButton": "Depósito",
     "withdraw": "Retiro",
@@ -439,7 +440,7 @@
     "relayerTotal": {
         "label": "Current Relayer",
         "name": "Name",
-        "fee": "Fee"
+        "fee": "Tornado Fee"
     },
     "withdrawalQueueIsOverloaded": "Withdrawal queue is overloaded"
 }

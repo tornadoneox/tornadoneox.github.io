@@ -97,9 +97,9 @@
               {{ $t('recipientAddress') }}
             </span>
           </div>
-          <!-- <button class="button is-primary-text" @click="insertDonate">
+          <button class="button is-primary-text" @click="insertDonate">
             {{ $t('donate') }}
-          </button> -->
+          </button>
         </div>
         <b-input
           v-model="withdrawAddress"
@@ -111,7 +111,9 @@
           <span class="has-text-warning">{{ error.type }}</span> {{ error.message }}
         </p>
       </div>
-      <RelayerTotal v-show="shouldShowRelayerTotal" />
+      <div v-if="selectedStatisticCurrency !== 'STORM'">
+        <RelayerTotal v-show="shouldShowRelayerTotal" />
+      </div>
       <WithdrawTotal
         v-show="shouldShowTotal"
         :currency="selectedStatisticCurrency"
@@ -340,6 +342,7 @@ export default {
             if (currency !== this.nativeCurrency) {
               this.$store.dispatch('application/setDefaultEthToReceive', { currency })
             }
+            this.$store.dispatch('loading/updateProgress', { progress: -1 })
             this.depositsPast = Number(depositsPast) <= 0 ? 0 : depositsPast
             this.depositTxHash = txHash
             this.depositTimestamp = timestamp
@@ -518,6 +521,7 @@ export default {
     bottom: 0;
     width: var(--width-animation);
     height: 100%;
+    background-color: #94febf;
     animation-fill-mode: backwards;
   }
 

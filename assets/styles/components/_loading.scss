@@ -10,13 +10,13 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        .loading-white {
+        .loading-tornado {
             &:after {
                 content: '';
                 display: block;
                 height: 60px;
                 width: 60px;
-                background-image: url('../img/white.webp');
+                background-image: url('../img/logo.svg');
                 animation: spinAroundReverse 2000ms infinite linear;
             }
         }

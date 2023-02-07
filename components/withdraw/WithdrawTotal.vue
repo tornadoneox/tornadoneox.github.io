@@ -20,12 +20,12 @@
         {{ $t('networkFee') }}
         <span data-test="label_network_fee">{{ toDecimals(networkFee, 18, 6) }} {{ networkCurrency }}</span>
       </div>
-      <div v-if="withdrawType === 'relayer'" class="withdraw-data-item">
+      <div v-if="withdrawType === 'relayer' && currency !== 'STORM'" class="withdraw-data-item">
         {{ $t('relayerFee') }}
-        <span data-test="label_relayer_fee">2%</span>
+        <span data-test="label_relayer_fee">1%</span>
         <!-- {{ toDecimals(relayerFee, null, 6) }} {{ currency }} -->
       </div>
-      <div v-if="withdrawType === 'relayer'" class="withdraw-data-item">
+      <div v-if="withdrawType === 'relayer' && currency !== 'STORM'" class="withdraw-data-item">
         {{ $t('totalFee') }}
         <span data-test="label_total_fee">2%</span>
         <!-- {{ toDecimals(totalRelayerFee, null, 6) }} {{ currency }} -->
@@ -88,15 +88,18 @@ export default {
       const roundDecimal = 10 ** decimalsPoint
       const aroundFee = toBN(parseInt(fee * roundDecimal, 10))
       const tornadoServiceFee = total.mul(toBN(aroundFee)).div(toBN(roundDecimal * 100))
+      console.log('debug-1', tornadoServiceFee, decimalsPoint, toBN(aroundFee), Number(total))
+      console.log(tornadoServiceFee, this.gasPriceInGwei, aroundFee, roundDecimal, 'debug->tornadoServiceFee')
       return tornadoServiceFee
     },
     totalRelayerFee() {
       const tornadoServiceFee = this.relayerFee
       const { currency } = this.selectedStatistic
       // const { decimals } = this.networkConfig.tokens[currency]
-      const ethFee = this.networkFee
+      // const ethFee = this.networkFee
       if (currency === this.nativeCurrency) {
-        return ethFee.add(tornadoServiceFee)
+        return tornadoServiceFee
+        // return ethFee.add(tornadoServiceFee)
       }
       // const tokenFee = ethFee.mul(toBN(10 ** decimals)).div(toBN(this.tokenRate))
       return tornadoServiceFee
@@ -126,9 +129,10 @@ export default {
 
       if (this.withdrawType === 'relayer') {
         const relayerFee = this.totalRelayerFee
-
         if (currency === this.nativeCurrency) {
           total = total.sub(relayerFee)
+        } else if (currency === 'storm') {
+          total = total.sub(toBN(0))
         } else {
           total = total.sub(relayerFee)
           // .sub(this.ethToReceiveInToken)
