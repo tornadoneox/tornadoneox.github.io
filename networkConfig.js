@@ -314,7 +314,6 @@ export default {
       },
       storm: {
         instanceAddress: {
-<<<<<<< HEAD
           '10': '0x7AE8F08911D37202aDeD3479095F4522ED535060',
           '100': '0xaA51A4fF9bD03c9E73A65d71b779c195db7722df',
           '500': '0xeF3548FB09B60bB1655D6BAdbD4A5d80c0F44c40',
@@ -323,16 +322,6 @@ export default {
         tokenAddress: '0xbBC4C1e5Bafe890B48639d493ca218EDa13f8e7b',
         symbol: 'STORM',
         decimals: 18,
-=======
-          '10': '0xB8cC42C43Bec92B305D4850C4D64818Fb275919a',
-          '100': '0x4e70f58Fb952f65235DB0CeF641ac71c44434Cd4',
-          '500': '0x7242CA65719710F0f9c00977eE9938fda21cb38c',
-          '1000': '0x53bd8F43B4468c8D963c81cdD61eE5a2D4C91631'
-        },
-        tokenAddress: '0xf1D99a8009f431b72E390E63A85E91D6CE4ECD7d',
-        symbol: 'STORM',
-        decimals: 8,
->>>>>>> 95c13a08109fe71f23578455200c086c1e2cbcca
         gasLimit: '80000'
       }
     },

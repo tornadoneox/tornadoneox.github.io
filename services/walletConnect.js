@@ -35,7 +35,7 @@ const walletConnectConnector = (chainId) => {
       qrcodeModalOptions: {
         mobileLinks: SUPPORTED_WALLETS
       },
-      bridge: WC_BRIDGE
+      // bridge: WC_BRIDGE
     })
 
     provider.injectedRequest = provider.enable

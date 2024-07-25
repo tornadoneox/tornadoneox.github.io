@@ -1,7 +1,6 @@
 <template>
   <div>
     <b-notification
-<<<<<<< HEAD
       class="main-notification"
       type="is-warning"
       icon-pack="icon"
@@ -12,8 +11,6 @@
       <i18n path="tornadoV2" />
     </b-notification>
     <b-notification
-=======
->>>>>>> 95c13a08109fe71f23578455200c086c1e2cbcca
       v-if="netId === 56"
       :active="isActiveNotification.binanceInternal"
       class="main-notification"
