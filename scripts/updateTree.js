@@ -14,7 +14,7 @@ const TREES_PATH = './static/trees/'
 const EVENTS_PATH = './static/events/'
 
 const EVENTS = ['deposit']
-const enabledChains = ['1']
+const enabledChains = ['1', '47763']
 let mimcHash
 
 const trees = {

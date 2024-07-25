@@ -4,7 +4,7 @@ import WalletConnectProvider from '@walletconnect/web3-provider'
 import { NETWORKS } from '@/constants'
 import networkConfig from '@/networkConfig'
 
-const { WC_BRIDGE } = process.env
+// const { WC_BRIDGE } = process.env
 
 const WALLET_CONNECT_INTERVAL = 1000
 const SUPPORTED_WALLETS = ['metamask', 'trust', 'imtoken', 'genericWeb3']
@@ -34,7 +34,7 @@ const walletConnectConnector = (chainId) => {
       pollingInterval: WALLET_CONNECT_INTERVAL,
       qrcodeModalOptions: {
         mobileLinks: SUPPORTED_WALLETS
-      },
+      }
       // bridge: WC_BRIDGE
     })
 

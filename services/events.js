@@ -160,7 +160,7 @@ class EventService {
     const { deployedBlock } = networkConfig[`netId${this.netId}`]
     const savedEvents = await this.getEvents(eventsType.DEPOSIT)
 
-    if (savedEvents.events.length) {
+    if (savedEvents?.events.length) {
       const { events } = await this.updateEvents(eventsType.DEPOSIT, savedEvents)
       return events
     }

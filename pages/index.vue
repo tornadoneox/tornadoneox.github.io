@@ -1,6 +1,6 @@
 <template>
   <div>
-    <b-notification
+    <!-- <b-notification
       class="main-notification"
       type="is-warning"
       icon-pack="icon"
@@ -21,7 +21,7 @@
       @close="disableNotification({ key: 'binanceInternal' })"
     >
       <i18n path="binanceInternalTxsNotification" />
-    </b-notification>
+    </b-notification> -->
 
     <!-- <b-notification
       :active="isActiveNotification.third"
@@ -39,7 +39,7 @@
       </i18n>
     </b-notification> -->
 
-    <b-notification
+    <!-- <b-notification
       :active="isActiveNotification.first"
       class="main-notification"
       type="is-info"
@@ -58,7 +58,7 @@
           >
         </template>
       </i18n>
-    </b-notification>
+    </b-notification> -->
 
     <!-- <b-notification
       v-if="isEthLink"

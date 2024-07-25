@@ -7,6 +7,100 @@ const {
 } = process.env
 
 export default {
+  netId47763: {
+    rpcCallRetryAttempt: 15,
+    gasPrices: {
+      instant: 5,
+      fast: 5,
+      standard: 5,
+      low: 5
+    },
+    nativeCurrency: 'gas',
+    currencyName: 'GAS',
+    explorerUrl: {
+      tx: 'https://xexplorer.neo.org/tx/',
+      address: 'https://xexplorer.neo.org/address/',
+      block: 'https://xexplorer.neo.org/block/'
+    },
+    merkleTreeHeight: 20,
+    emptyElement: '21663839004416932945382355908790599225266501822907911457504978515578255421292',
+    networkName: 'NEOX',
+    deployedBlock: 7128,
+    multicall: '0xD6010D102015fEa9cB3a9AbFBB51994c0Fd6E672',
+    echoContractAccount: '0x8C65092d2299BF8AF7A1073DfCD30Ab9EF0f015A',
+    verifier: '0x811bfaE056Bc04B5104D7b9885AA5d24111fDDcA',
+    rpcUrls: {
+      publicRpc1: {
+        name: 'NEOX Public RPC 1',
+        url: 'https://mainnet-2.rpc.banelabs.org/'
+      }
+    },
+    tokens: {
+      gas: {
+        instanceAddress: {
+          '1': '0xB50DF7344f543613c1969F8d493b10E8C4c2CAC1',
+          '10': '0x02667b06EC81391bfaF05bC15e78ecec79Dcb167',
+          '100': '0xDaA7DE064B05d9100084Ffe37B80b8B4449B91c2'
+        },
+        symbol: 'GAS',
+        decimals: 18
+      }
+    },
+    ensSubdomainKey: 'neox-white',
+    pollInterval: 10,
+    constants: {
+      NOTE_ACCOUNT_BLOCK: 7128,
+      ENCRYPTED_NOTES_BLOCK: 7128
+    },
+    'white-proxy-light.contract.tornadocash.eth': '0xf9437EF4a87Ed566C5762280e0747C325d49739c'
+  },
+  netId12227332: {
+    rpcCallRetryAttempt: 15,
+    gasPrices: {
+      instant: 5,
+      fast: 5,
+      standard: 5,
+      low: 5
+    },
+    nativeCurrency: 'gas',
+    currencyName: 'GAS',
+    explorerUrl: {
+      tx: 'https://testnet.scan.banelabs.org/tx/',
+      address: 'https://testnet.scan.banelabs.org/address/',
+      block: 'https://testnet.scan.banelabs.org/block/'
+    },
+    merkleTreeHeight: 20,
+    emptyElement: '21663839004416932945382355908790599225266501822907911457504978515578255421292',
+    networkName: 'NEOX T4',
+    deployedBlock: 112168,
+    multicall: '0x82096F92248dF7afDdef72E545F06e5be0cf0F99',
+    echoContractAccount: '0x8C65092d2299BF8AF7A1073DfCD30Ab9EF0f015A',
+    verifier: '0x811bfaE056Bc04B5104D7b9885AA5d24111fDDcA',
+    rpcUrls: {
+      publicRpc1: {
+        name: 'NEOX T4 Public RPC 1',
+        url: 'https://neoxt4seed1.ngd.network/'
+      }
+    },
+    tokens: {
+      gas: {
+        instanceAddress: {
+          '1': '0xB50DF7344f543613c1969F8d493b10E8C4c2CAC1',
+          '10': '0x02667b06EC81391bfaF05bC15e78ecec79Dcb167',
+          '100': '0xDaA7DE064B05d9100084Ffe37B80b8B4449B91c2'
+        },
+        symbol: 'GAS',
+        decimals: 18
+      }
+    },
+    ensSubdomainKey: 'neox-white',
+    pollInterval: 10,
+    constants: {
+      NOTE_ACCOUNT_BLOCK: 112168,
+      ENCRYPTED_NOTES_BLOCK: 112168
+    },
+    'white-proxy-light.contract.tornadocash.eth': '0xf9437EF4a87Ed566C5762280e0747C325d49739c'
+  },
   netId1: {
     rpcCallRetryAttempt: 15,
     gasPrices: {
